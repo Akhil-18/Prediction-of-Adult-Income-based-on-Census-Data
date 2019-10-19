@@ -7,8 +7,11 @@
 - Arjun Bharadwaj
 - Dinesh
 
+## Domain:
+Census Bureau : https://www.census.gov/academy  
+  
 ## Objective:
-- The goal of this project is to make prediction analysis to determine whether a person makes over $50K a year by applying the machine learning classification algorithms.
+The goal of this project is to make prediction analysis to determine whether a person makes over $50K a year by applying the machine learning classification algorithms.
 
 ## Data and Source Description
 #### Dataset : Adult Census Income from Kaggle
@@ -38,15 +41,23 @@ hours-per-week: continuous
 native-country: United-States, Cambodia, England, Puerto-Rico, Canada, Germany, Outlying-US(Guam-USVI-etc), India, Japan, Greece, South, China, Cuba, Iran, Honduras, Philippines, Italy, Poland, Jamaica, Vietnam, Mexico, Portugal, Ireland, France, Dominican-Republic, Laos, Ecuador, Taiwan, Haiti, Columbia, Hungary, Guatemala, Nicaragua, Scotland, Thailand, Yugoslavia, El-Salvador, Trinadad&Tobago, Peru, Hong, Holand-Netherlands  
   
 ## Application of the CRISP-DM Process
-
-## Domain Knowledge
+   - Data Understanding Phase
+   - Data Preparation Phase
+   - Modeling Phase
+   - Evaluation Phase
+   - Deployment Phase
 
 ## Data Understanding and EDA
-
+    [Work in progress]  
+    
 ## Data Preparation
-
+    [Work in progress]  
+    
 ## Machine Learning
-
+    [Work in progress]  
+    
 ## Evaluation
-
+    [Work in progress]  
+    
 ## Conclusion
+Finally from the dataset we predict whether a person makes over $50K a year or not.
