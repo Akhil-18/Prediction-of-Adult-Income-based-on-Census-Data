@@ -52,7 +52,7 @@ native-country: United-States, Cambodia, England, Puerto-Rico, Canada, Germany, 
 Data Pre-Processing and Exploratory Data Analysis has been performed on the data and below are the observations
 
 1. The no of records having income less than 50k dollars is more than the no of records having income more than 50k dollars income. The dataset neeeds to be balanced with the target values so that the models do not overfit the data.
-2. The capital.gain and capital.loss values contain zeroes ,so these columns can be dropped.<br/>
+2. The capital.gain and capital.loss values contain zeroes ,so these columns can be dropped.
 3. Scatter plots and bar plots are plotted to find the distribution of various values of categorical values.
 4. Hours.per.week has a value of 40 in most of the records, so this field can be dropped.
 5. The fnlwgt values are moslty in the range of 0-40,000 and are of age 20 to 40.
