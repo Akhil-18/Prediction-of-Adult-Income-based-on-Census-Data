@@ -3,9 +3,9 @@
 ## Contributors:
 - Ramachandra Gopal Posina
 - Akhil Morampudi
-- Mahanth Mukesh
-- Arjun Bharadwaj
-- Dinesh
+- Mahanth Mukesh Dadisetty
+- Bharadwaj Aryasomayajula
+- Dinesh Deshi
 
 ## Domain:
 Census Bureau : https://www.census.gov/academy  
@@ -47,11 +47,17 @@ native-country: United-States, Cambodia, England, Puerto-Rico, Canada, Germany, 
    - Evaluation Phase
    - Deployment Phase
 
-## Data Understanding and EDA
-    [Work in progress]  
+## Data Understanding and Data Preparation
+
+Data Pre-Processing and Exploratory Data Analysis has been performed on the data and below are the observations
+
+1. The no of records having income less than 50k dollars is more than the no of records having income more than 50k dollars income. The dataset neeeds to be balanced with the target values so that the models do not overfit the data.
+2. The capital.gain and capital.loss values contain zeroes ,so these columns can be dropped.<br/>
+3. Scatter plots and bar plots are plotted to find the distribution of various values of categorical values.
+4. Hours.per.week has a value of 40 in most of the records, so this field can be dropped.
+5. The fnlwgt values are moslty in the range of 0-40,000 and are of age 20 to 40.
+6. The outliers are present in some of the contiuous variables which need to the handled properly.
     
-## Data Preparation
-    [Work in progress]  
     
 ## Machine Learning
     [Work in progress]  
