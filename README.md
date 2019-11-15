@@ -11,7 +11,7 @@
 Income of US Citizes, Census Bureau
   
 ## Objective:
-The objective of this project is to accurately predict whether a person earns salary over $50k a year or not using the census dataset by applying machine learning algorithms.
+An individual’s annual income results from various factors. Intuitively, it is influenced by the individual’s education level, age, gender, occupation, and etc. In this project report we have a summary of our analysis and exploration of the Adult Census Data to come up with meaningful, important and interesting attributes of the data. Further, after having sufficient knowledge about the attributes we have performed a predictive task of classification, whether income exceeds $50K/yr. based on this data. In our project, we worked on the Census data set. In our initial stages, we preprocessed the data and developed understanding of the data and its useful features that explain the variances by doing various types of exploratory analysis. Later, we moved on to a classification task of predicting whether the income is >=50k/year from a person’s attributes, by using important features. For the classification task, we implemented various machine learning models, that after the initial task would prove useful. After implementing various machine learning models, we compared their results on the training and the test set to arrive at a model that works best for the predictive task on both test and training data set with 87% accuracy. We are interested to learn how well we can predict whether an individual’s annual income exceeds $50,000 using the set of variables in this data set. The question is inspected in two different approaches – traditional statistical modeling and machine learning techniques. Logistic regression is used as the statistical modeling tool as the outcome is binary. The goal of this project is to make prediction analysis to determine whether a person makes over $50K a year by applying the machine learning classification algorithms.
 
 ## Data and Source Description
 #### Dataset : Adult Census Income from Kaggle
@@ -60,10 +60,53 @@ Data Pre-Processing and Exploratory Data Analysis has been performed on the data
     
     
 ## Machine Learning
-    [Work in progress]  
+
+  1.Performed Logistic Regression on the model and calculated the performance metrics of the model and computed the scores  
     
 ## Evaluation
-    [Work in progress]  
-    
+
+Model evaluation metrics are required to quantify model performance. The choice of evaluation metrics depends on a given machine learning task (such as classification, regression, ranking, clustering, topic modeling, among others). Some metrics, such as precision-recall, are useful for multiple tasks. 
+
+Classification Metrics include the following scores
+
+1.Classification Accuracy
+
+2.Confusion Matrix
+
+3.F1 score on test 
+
+4.Precision
+
+5.Specificity 
+
+6.Recall 
+
+1.Classification Accuracy:
+Accuracy is a common evaluation metric for classification problems. It’s the number of correct predictions made as a ratio of all predictions made. We use sklearn module to compute the accuracy of a classification task
+
+2.Confusion Matrix
+A confusion matrix provides a more detailed breakdown of correct and incorrect classifications for each class.The diagonal elements represent the number of points for which the predicted label is equal to the true label, while anything off the diagonal was mislabeled by the classifier. Therefore, the higher the diagonal values of the confusion matrix the better, indicating many correct predictions.
+
+3.Area under Curve (AUC)
+Area under ROC Curve is a performance metric for measuring the ability of a binary classifier to discriminate between positive and negative classes.
+
+4.F-Measure
+F-measure (also F-score) is a measure of a test’s accuracy that considers both the precision and the recall of the test to compute the score. Precision is the number of correct positive results divided by the total predicted positive observations.
+
+5.Recall, 
+Itis the number of correct positive results divided by the number of all relevant samples (total actual positives).
+
+Evaulation scores & Performance metrics obtained in our model:
+
+Accuracy on test: 0.8019891500904159 
+
+F1 score on test: 0.4360515021459227 
+
+Precision : 0.7720364741641338 
+
+Specificity : 0.9697824335213537 
+
+Recall : 0.3038277511961722 
+
 ## Conclusion [Work in Progress]
 Finally from the dataset we predict whether a person makes over $50K a year or not.
