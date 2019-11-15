@@ -64,7 +64,32 @@ Data Pre-Processing and Exploratory Data Analysis has been performed on the data
   1.Performed Logistic Regression on the model and calculated the performance metrics of the model and computed the scores  
     
 ## Evaluation
-    [Work in progress]  
-    
+
+Model evaluation metrics are required to quantify model performance. The choice of evaluation metrics depends on a given machine learning task (such as classification, regression, ranking, clustering, topic modeling, among others). Some metrics, such as precision-recall, are useful for multiple tasks. 
+
+Classification Metrics include the following scores
+
+1.Classification Accuracy
+2.Confusion Matrix
+3.F1 score on test 
+4.Precision
+5.Specificity 
+6.Recall 
+
+1.Classification Accuracy:
+Accuracy is a common evaluation metric for classification problems. It’s the number of correct predictions made as a ratio of all predictions made. We use sklearn module to compute the accuracy of a classification task
+
+2.Confusion Matrix
+A confusion matrix provides a more detailed breakdown of correct and incorrect classifications for each class.The diagonal elements represent the number of points for which the predicted label is equal to the true label, while anything off the diagonal was mislabeled by the classifier. Therefore, the higher the diagonal values of the confusion matrix the better, indicating many correct predictions.
+
+3.Area under Curve (AUC)
+Area under ROC Curve is a performance metric for measuring the ability of a binary classifier to discriminate between positive and negative classes.
+
+4.F-Measure
+F-measure (also F-score) is a measure of a test’s accuracy that considers both the precision and the recall of the test to compute the score. Precision is the number of correct positive results divided by the total predicted positive observations.
+
+5.Recall, 
+Itis the number of correct positive results divided by the number of all relevant samples (total actual positives).
+
 ## Conclusion [Work in Progress]
 Finally from the dataset we predict whether a person makes over $50K a year or not.
