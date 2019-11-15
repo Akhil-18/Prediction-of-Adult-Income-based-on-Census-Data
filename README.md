@@ -70,10 +70,15 @@ Model evaluation metrics are required to quantify model performance. The choice 
 Classification Metrics include the following scores
 
 1.Classification Accuracy
+
 2.Confusion Matrix
+
 3.F1 score on test 
+
 4.Precision
+
 5.Specificity 
+
 6.Recall 
 
 1.Classification Accuracy:
@@ -90,6 +95,18 @@ F-measure (also F-score) is a measure of a test’s accuracy that considers both
 
 5.Recall, 
 Itis the number of correct positive results divided by the number of all relevant samples (total actual positives).
+
+Evaulation scores & Performance metrics obtained in our model:
+
+Accuracy on test: 0.8019891500904159 
+
+F1 score on test: 0.4360515021459227 
+
+Precision : 0.7720364741641338 
+
+Specificity : 0.9697824335213537 
+
+Recall : 0.3038277511961722 
 
 ## Conclusion [Work in Progress]
 Finally from the dataset we predict whether a person makes over $50K a year or not.
