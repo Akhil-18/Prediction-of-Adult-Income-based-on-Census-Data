@@ -11,7 +11,7 @@
 Income of US Citizes, Census Bureau
   
 ## Objective:
-The goal of this project is to predict if an individual’s income exceeds 50K or not by applying machine learning classification algorithms and also finding patters in the dataset using Association rules. This helps us to determine various things such as lucrativeness of setting up a business in a city based on average income of the people, Real Estate preferences and bank loan eligibility for a particular person. In addition, we can also figure out what type of tourist places a particular strata of people would like to visit and whether that person’s children would prefer a public or private college in future.
+The goal of this project is to predict if an individual’s income exceeds 50K or not using machine learning classification algorithms and also finding patters in the dataset using Association rules. This helps us to determine various things such as lucrativeness of setting up a business in a city based on average income of the people, Real Estate preferences and bank loan eligibility for a particular person. In addition, we can also figure out what type of tourist places a particular strata of people would like to visit and whether that person’s children would prefer a public or private college in future.
 
 ## Data and Source Description
 #### Dataset : Adult Census Income from Kaggle
