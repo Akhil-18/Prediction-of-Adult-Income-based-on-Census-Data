@@ -11,7 +11,7 @@
 Income of US Citizes, Census Bureau
   
 ## Objective:
-An individual’s annual income results from various factors. Intuitively, it is influenced by the individual’s education level, age, gender, occupation, and etc. In this project report we have a summary of our analysis and exploration of the Adult Census Data to come up with meaningful, important and interesting attributes of the data. Further, after having sufficient knowledge about the attributes we have performed a predictive task of classification, whether income exceeds $50K/yr. based on this data. In our project, we worked on the Census data set. In our initial stages, we preprocessed the data and developed understanding of the data and its useful features that explain the variances by doing various types of exploratory analysis. Later, we moved on to a classification task of predicting whether the income is >=50k/year from a person’s attributes, by using important features. For the classification task, we implemented various machine learning models, that after the initial task would prove useful. After implementing various machine learning models, we compared their results on the training and the test set to arrive at a model that works best for the predictive task on both test and training data set with 87% accuracy. We are interested to learn how well we can predict whether an individual’s annual income exceeds $50,000 using the set of variables in this data set. The question is inspected in two different approaches – traditional statistical modeling and machine learning techniques. Logistic regression is used as the statistical modeling tool as the outcome is binary. The goal of this project is to make prediction analysis to determine whether a person makes over $50K a year by applying the machine learning classification algorithms.
+The goal of this project is to predict if an individual’s income exceeds 50K or not by applying machine learning classification algorithms and also finding patters in the dataset using Association rules. This helps us to determine various things such as lucrativeness of setting up a business in a city based on average income of the people, Real Estate preferences and bank loan eligibility for a particular person. In addition, we can also figure out what type of tourist places a particular strata of people would like to visit and whether that person’s children would prefer a public or private college in future.
 
 ## Data and Source Description
 #### Dataset : Adult Census Income from Kaggle
@@ -51,17 +51,29 @@ native-country: United-States, Cambodia, England, Puerto-Rico, Canada, Germany, 
 
 Data Pre-Processing and Exploratory Data Analysis has been performed on the data and below are the observations
 
-1. The no of records having income less than 50k dollars is more than the no of records having income more than 50k dollars income. The dataset neeeds to be balanced with the target values so that the models do not overfit the data.
-2. The capital.gain and capital.loss values contain zeroes ,so these columns can be dropped.  
+
+#### Bias in the data:
+AI Fairness 360 by IBM implements several pre-processing mitigation algorithms. We will choose the Optimized Preprocess algorithm, which is implemented in “OptimPreproc” class in the “aif360.algorithms.preprocessing” directory. This algorithm will transform the dataset to have more equity in positive outcomes on the protected attribute for the privileged and unprivileged groups.
+
+<b>Bias in original dataset:</b> Difference in mean outcomes between unprivileged and privileged groups = -0.104553  
+<b>Bias after mitigation:</b> Difference in mean outcomes between unprivileged and privileged groups = -0.051074
+
+
+#### Preliminary Observations:
+1. The no of records having income less than 50k dollars is more than the no of records having income more than 50k dollars income. The dataset needs to be balanced with the    target values so that the models do not overfit the data.
+2. The capital.gain and capital.loss values contain zeroes, so these columns can be dropped.  
 3. Scatter plots and bar plots are plotted to find the distribution of various values of categorical values.  
 4. Hours.per.week has a value of 40 in most of the records, so this field can be dropped.
-5. The fnlwgt values are moslty in the range of 0-40,000 and are of age 20 to 40.
-6. The outliers are present in some of the contiuous variables which need to the handled properly.
+5. The fnlwgt values are mostly in the range of 0-40,000 and are of age 20 to 40.
+6. The outliers are present in some of the continuous variables which need to the handled properly.
     
     
 ## Machine Learning
 
-  1.Performed Logistic Regression on the model and calculated the performance metrics of the model and computed the scores  
+  1.Performed Logistic Regression on the model and calculated the performance metrics of the model and computed the scores   
+  2.Association Rules(For finding patters in the Dataset)  
+  3.K-Fold Cross Validation  
+  4.Applying CART algorithms to choose the best algorithm based on the metrics obtained.
     
 ## Evaluation
 
@@ -96,7 +108,7 @@ F-measure (also F-score) is a measure of a test’s accuracy that considers both
 5.Recall, 
 Itis the number of correct positive results divided by the number of all relevant samples (total actual positives).
 
-Evaulation scores & Performance metrics obtained in our model:
+<b>Evaulation scores & Performance metrics obtained in our model:</b>
 
 Accuracy on test: 0.8019891500904159 
 
@@ -109,4 +121,6 @@ Specificity : 0.9697824335213537
 Recall : 0.3038277511961722 
 
 ## Conclusion [Work in Progress]
-Finally from the dataset we predict whether a person makes over $50K a year or not.
+Finally from the dataset we predict whether a person makes over $50K a year or not.  
+Find Patters in the dataset  
+K-Fold cross validation
