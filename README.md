@@ -38,7 +38,7 @@ sex: Female, Male
 capital-gain: continuous  
 capital-loss: continuous
 hours-per-week: continuous
-native-country: United-States, Cambodia, England, Puerto-Rico, Canada, Germany, Outlying-US(Guam-USVI-etc), India, Japan, Greece, South, China, Cuba, Iran, Honduras, Philippines, Italy, Poland, Jamaica, Vietnam, Mexico, Portugal, Ireland, France, Dominican-Republic, Laos, Ecuador, Taiwan, Haiti, Columbia, Hungary, Guatemala, Nicaragua, Scotland, Thailand, Yugoslavia, El-Salvador, Trinadad&Tobago, Peru, Hong, Holand-Netherlands  
+native-country: United-States, Cambodia, England, Puerto-Rico, Canada, Germany, Outlying-US(Guam-USVI-etc), India, Japan, Greece, South, China, Cuba, Iran, Honduras, Philippines, Italy, Poland, Jamaica, Vietnam, Mexico, Portugal, Ireland, France, Dominican-Republic, Laos, Ecuador, Taiwan, Haiti, Columbia, Hungary, Guatemala, Nicaragua, Scotland, Thailand, Yugoslavia, El-Salvador, Trinadad&Tobago, Peru, Hong, Holand-Netherlands 
   
 ## Application of the CRISP-DM Process
    - Data Understanding Phase
@@ -73,7 +73,8 @@ AI Fairness 360 by IBM implements several pre-processing mitigation algorithms. 
   1.Performed Logistic Regression on the model and calculated the performance metrics of the model and computed the scores   
   2.Association Rules(For finding patters in the Dataset)  
   3.K-Fold Cross Validation  
-  4.Applying CART algorithms to choose the best algorithm based on the metrics obtained.
+  4.Applying CART algorithms to choose the best algorithm based on the metrics obtained.  
+  5.Using ensemble learning implemented neural networks
     
 ## Evaluation
 
@@ -112,15 +113,18 @@ Itis the number of correct positive results divided by the number of all relevan
 
 Accuracy on test: 0.8019891500904159 
 
-F1 score on test: 0.4360515021459227 
+F1 score on test: 0.49
 
 Precision : 0.7720364741641338 
 
 Specificity : 0.9697824335213537 
 
-Recall : 0.3038277511961722 
+Recall : 0.580
 
-## Conclusion [Work in Progress]
+## Future Scope
+- Design a machine learning pipeline and feed the ensemble learning
+
+## Conclusion
 Finally from the dataset we predict whether a person makes over $50K a year or not.  
 Find Patters in the dataset  
 K-Fold cross validation
